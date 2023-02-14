@@ -6,10 +6,10 @@ This project is where I write what I learned for unity and develop on it <br/>
 ## Methods
 
 **Private and Public Medhods**
-- Private method,  erisilmemesini istedigimizde
-- Public method erisilmesini istedigimizde 
-- [HideInInspector] public ama arayuzde gozukmesin
-- [SerializeField] prite ama arayuzde gozuksun diye
+- Private method,  dışarıdan erişilir
+- Public method dışarıdan erişimez
+- [HideInInspector] public yapsan da arayüzde gözükmez
+- [SerializeField] private olsa da arayüzde gözükür
 Ayni zamanda; 
 - public ==> read and write
 - [SerializeField] private ==> read only
