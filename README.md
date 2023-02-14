@@ -14,6 +14,9 @@ Ayni zamanda;
 - public ==> read and write
 - [SerializeField] private ==> read only
 ## Name Convension
+
+[Naming Convension Source](https://github.com/justinwasilenko/Unity-Style-Guide#scene-structure)
+
 All Public Functions Should Have A Summary
 
 /// <summary>
