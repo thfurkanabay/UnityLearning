@@ -14,7 +14,15 @@ Ayni zamanda;
 - public ==> read and write
 - [SerializeField] private ==> read only
 ## Name Convension
+All Public Functions Should Have A Summary
 
+/// <summary>
+/// Fire a gun
+/// </summary>
+public void Fire()
+{
+// Fire the gun.
+}
 
 
 
