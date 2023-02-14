@@ -1,10 +1,11 @@
 # UnityLearning
 This project is where I write what I learned for unity and develop on it
-
+[Syntax Rules](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 ## Pipeline
 
 ## Medhods
 
+Private and Public Medhods
 - Private method,  erisilmemesini istedigimizde
 - Public method erisilmesini istedigimizde 
 - [HideInInspector] public ama arayuzde gozukmesin
