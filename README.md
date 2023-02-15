@@ -19,7 +19,7 @@ Ayni zamanda;
 - transform.translate: move via x,y,z coordinate
 - Vector3: represent 3d point
 - transform.translate(Vector3.forward * Time.deltaTime * Speed)
-
+- Late update
 Rigidbody
 Colliders
 GameObject
