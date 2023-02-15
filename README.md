@@ -22,6 +22,7 @@ Ayni zamanda;
 
 Rigidbody
 Colliders
+GameObject
 https://miro.medium.com/v2/resize:fit:572/format:webp/1*7IR7CcCFXWUo1n192Pby4A.png![image](https://user-images.githubusercontent.com/26336737/218953365-7faeacd2-e35f-4c6d-9253-0373831444d8.png)
 Unit-1
 New Functionality
@@ -62,6 +63,8 @@ public void Fire()
 - Kullanıcıdan bazı **Inputlar** alınacak ve **Action** lara dönüştürülecek
  
 
+## Tips and Tricks
+Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet olsrak ata.
 
 ## Sources
 - [private and public methods](https://stackoverflow.com/questions/52906797/when-should-i-use-public-private-or-serializefield-unity-c-sharp)
