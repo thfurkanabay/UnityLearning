@@ -86,4 +86,6 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 ## To be learn 
 - Gamemanager e ne konur? 
 - [Extern nedir?](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/objective-c-ile-ios-201/extern-bellek-sinifi)
-- 
+
+## Extra works
+- [ ] https://learn.unity.com/tutorial/bonus-features-1-share-your-work# Checklist 
