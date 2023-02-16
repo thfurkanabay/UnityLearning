@@ -48,6 +48,12 @@ https://miro.medium.com/v2/resize:fit:572/format:webp/1*7IR7CcCFXWUo1n192Pby4A.p
 - Empty objects 
 - Get user input
 - Translate vs Rotate
+- The player can move left and right based on the user’s left and right key presses
+- The player will not be able to leave the play area on either side
+- New Concepts & Skills
+- Adjust object scale
+- If-statements
+- Greater/Less than operators
 
 
 Components
@@ -86,6 +92,7 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 ## To be learn 
 - Gamemanager e ne konur? 
 - [Extern nedir?](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/objective-c-ile-ios-201/extern-bellek-sinifi)
+- https://learn.unity.com/tutorial/the-real-time-production-cycle#
 
 ## Extra works
 - [ ] https://learn.unity.com/tutorial/bonus-features-1-share-your-work# Checklist 
