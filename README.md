@@ -25,7 +25,6 @@ Colliders
 GameObject
 horizantalInput= Input.GetAxis("Horizantal"); /horizantal ayzıyoruz çünkü ıNput managerin içindeki ismi bu aynı zmanada aslındaa Input manager fornksiyounu çağırmış ve çalıştırmı oluyoruz.
 
-
 verticalInput
 
 https://miro.medium.com/v2/resize:fit:572/format:webp/1*7IR7CcCFXWUo1n192Pby4A.png![image](https://user-images.githubusercontent.com/26336737/218953365-7faeacd2-e35f-4c6d-9253-0373831444d8.png)
@@ -93,6 +92,6 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - Gamemanager e ne konur? 
 - [Extern nedir?](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/objective-c-ile-ios-201/extern-bellek-sinifi)
 - https://learn.unity.com/tutorial/the-real-time-production-cycle#
-
+-  Invoke()_
 ## Extra works
 - [ ] https://learn.unity.com/tutorial/bonus-features-1-share-your-work# Checklist 
