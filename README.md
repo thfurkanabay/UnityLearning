@@ -92,6 +92,8 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - Gamemanager e ne konur? 
 - [Extern nedir?](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/objective-c-ile-ios-201/extern-bellek-sinifi)
 - https://learn.unity.com/tutorial/the-real-time-production-cycle#
--  Invoke() [ Link ](https://www.youtube.com/watch?v=_cmlXcCd6WI)
+-  Invoke() [ Link ](https://www.youtube.com/watch?v=_cmlXcCd6WI),Invoke(nameof(CompleteLevel), 5f); << use with nameof
+-  name of ?
+-  InvokeRepeating() ?
 ## Extra works
 - [ ] https://learn.unity.com/tutorial/bonus-features-1-share-your-work# Checklist 
