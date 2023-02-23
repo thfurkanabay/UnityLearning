@@ -1,6 +1,13 @@
 # UnityLearning
 This project is where I write what I learned for unity and develop on it <br/>
 [Syntax Rules](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+**Project naming**
+- use lowercase
+- use dashes
+- be specific. you may find you have to differentiate between similar ideas later - ie use purchase-rest-service instead of service or rest-service.
+- be consistent. consider usage from the various GIT vendors - how do you want your repositories to be sorted/grouped?
+[Source](https://stackoverflow.com/questions/11947587/is-there-a-naming-convention-for-git-repositories)
 ## Pipeline
 
 ## Methods
