@@ -109,6 +109,6 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 
 ## Unity Graphics
 ### Render
-- [Render Pipleine from unity manual](https://docs.unity3d.com/Manual/BestPracticeLightingPipelines.html)
+- [Render Pipeline from unity manual](https://docs.unity3d.com/Manual/BestPracticeLightingPipelines.html)
 
 
