@@ -106,3 +106,9 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 -  InvokeRepeating() ?
 ## Extra works
 - [ ] https://learn.unity.com/tutorial/bonus-features-1-share-your-work# Checklist 
+
+## Unity Graphics
+### Render
+- [Render Pipleine from unity manual](https://docs.unity3d.com/Manual/BestPracticeLightingPipelines.html)
+
+
