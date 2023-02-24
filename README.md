@@ -94,6 +94,8 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 
 ## Sources
 - [private and public methods](https://stackoverflow.com/questions/52906797/when-should-i-use-public-private-or-serializefield-unity-c-sharp)
+- https://www.researchgate.net/publication/323179176_Game_Engine_Solutions
+- 
 
 ## To be learn 
 - Gamemanager e ne konur? 
