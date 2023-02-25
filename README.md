@@ -61,7 +61,6 @@ https://miro.medium.com/v2/resize:fit:572/format:webp/1*7IR7CcCFXWUo1n192Pby4A.p
 - If-statements
 - Greater/Less than operators
 
-
 Components
 Collider and RigidBody
 
@@ -113,4 +112,9 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 ### Shaders
 - A program that runs on the GPU.
 - [Sources Unity Manual](https://docs.unity3d.com/Manual/Shaders.html)
+
+## PlayerPrefs
+- PlayerPrefs is a class that stores Player preferences between game sessions. It can store string, float and integer values into the user’s platform registry.
+
+
 
