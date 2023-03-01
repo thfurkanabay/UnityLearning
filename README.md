@@ -31,8 +31,13 @@ Rigidbody
 Colliders
 GameObject
 horizantalInput= Input.GetAxis("Horizantal"); /horizantal ayzıyoruz çünkü ıNput managerin içindeki ismi bu aynı zmanada aslındaa Input manager fornksiyounu çağırmış ve çalıştırmı oluyoruz.
+* Input
+- KeyCode: 
 
-verticalInput
+
+- Instantiate() : Create a copy its already exist ..... 
+
+- verticalInput
 
 https://miro.medium.com/v2/resize:fit:572/format:webp/1*7IR7CcCFXWUo1n192Pby4A.png![image](https://user-images.githubusercontent.com/26336737/218953365-7faeacd2-e35f-4c6d-9253-0373831444d8.png)
 
@@ -115,6 +120,47 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 
 ## PlayerPrefs
 - **Description:** PlayerPrefs is a class that stores Player preferences between game sessions. It can store string, float and integer values into the user’s platform registry.
+
+## 1 March 2023 Notes
+
+- Destroy(): 
+- Destroy(gameObject):
+- New Functionality
+- The player can press the Spacebar to launch a projectile prefab,
+- Projectile and Animals are removed from the scene if they leave the screen
+- New Concepts & Skills
+- Create Prefabs
+- Override Prefabs
+- Test for Key presses
+- Instantiate objects
+- Destroy objects 
+- Else-if statements
+- Random.Range():
+- SpawnManager
+- New Functionality
+- The player can press the S to spawn an animal
+- Animal selection and spawn location are randomized
+- Camera projection (perspective/orthographic) selected
+- New Concepts & Skills
+- Spawn Manager
+- Arrays
+- Keycodes
+- Random generation
+- Local vs Global variables
+- Perspective vs Isometric projections
+- New Functionality
+- Animals spawn on a timed interval and walk down the screen 
+- When animals get past the player, it triggers a “Game Over” message
+- If a projectile collides with an animal, both objects are removed
+- New Concepts & Skills
+- Create custom methods/functions
+- InvokeRepeating() to repeat code
+- Colliders and Triggers 
+- Override functions
+- Log Debug messages to console
+
+
+
 
 
 
