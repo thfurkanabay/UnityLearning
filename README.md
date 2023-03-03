@@ -159,7 +159,14 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - Override functions
 - Log Debug messages to console
 
-
+- New progress
+- New project for your Personal Project
+- Camera positioned and rotated based on project type
+- All key objects in scene with unique materials
+- New concepts & skills: 
+- Primitives
+- Create new materials
+- Export Unity packages
 
 
 
