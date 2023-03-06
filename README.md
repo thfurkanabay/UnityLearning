@@ -229,3 +229,19 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - animasyonar arı geçiş yapmak trigger vs layer ve parameterlarla kontrol ediklir.
 - aimatorü tantııoryz ardından özelliklerile oynuyoruzç
 - not operator ==false gbi çalışır.
+
+- 3.4
+- Music plays during the game
+- Particle effects at the player’s feet when they run
+- Sound effects and explosion when the player hits an obstacle
+- New Concepts and Skills:
+- Particle systems 
+- Child object positioning
+- Audio clips and Audio sources 
+- Play and stop sound effects
+
+**Çıkardıkalrım**
+- script çağırımları start ta yapılır.
+- Ears-> listerner, speakers -> audiosource davranışı yapar
+- audio soruce çağıırrp playoneshot gibi fonksiyonkar kullanılabilir.
+- ana müzik direkt main kameraya eklenebilir.
