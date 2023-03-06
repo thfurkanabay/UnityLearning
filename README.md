@@ -167,7 +167,65 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - Primitives
 - Create new materials
 - Export Unity packages
+- 3.1
+- New Functionality
+- Player jumps on spacebar press
+- Player cannot double-jump
+- Obstacles and Background move left
+- Obstacles spawn on intervals
+- Key Concepts and Skills
+- GetComponent
+- ForceMode.Impulse
+- Physics.Gravity
+- Rigidbody constraints
+- Rigidbody variables
+- Booleans
+- Multiply/Assign (“*) Operator
+- And (&&) Operator
+- OnCollisionEnter()
+
+**Çıkardıkalrım**
+- objede ulaşmak istediğimize getcomponentle ulaşıcaz
+- rigidbody add force ile force verip force mod ile force tipini seçebilriiz.
+- rigidbody contraint ile ozisyon ve roation dondurabiliriz.
+- oyuncu ilerletmektense diğerlerine moveleft giib bir fonksiyon yazılabilri.
+- Physics.Gravity ile yerçekimine etki edebiliriz
+- oncolliedipom enter iele örneğin yere değdi mi değmedi mi bunu kontrol edebiriz.
+- 
+
+- 3.2
+- Background repeats seamlessly
+- Background stops when player collides with obstacle
+- Obstacle spawning stops when player collides with obstacle
+- Obstacles are destroyed off-screen
+- New Concepts and Skills:
+- Repeat background
+- Get Collider width
+- Script communication
+- Equal to (==) operator
+- Tags
+- CompareTag(
+**Çıkardıkalrım**
+- Eğer sonsux yapcaksak box collider uzunluğunun yarısından itibaren detect edip positionunun startpos yapararız.
+- oyun bitimini collide olunca yapabiliriz.
+- oyun bitince obstacle spawnlamayı durdurmalıyız.
+- campoare tag ile istediğimiz obje türünü yokedebiriiz.
+- script comm. için scripti bir obje oluştrup hierarcydeki ilgili objeden getcomponen tile scripti çekip işlem yapabiliriz bunun için kullancamız değerler public olmalı.
 
 
+- 3.3
+- The player starts the scene with a fast-paced running animation
+- When the player jumps, there is a jumping animation
+- When the player crashes, the player falls over
+- New Concepts and Skills:
+- Animation Controllers
+- Animation States, Layers, and Transitions
+- Animation parameters
+- Animation programming
+- SetTrigger(), SetBool()
+- Not (!) operator
 
-
+**Çıkardıkalrım**
+- animasyonar arı geçiş yapmak trigger vs layer ve parameterlarla kontrol ediklir.
+- aimatorü tantııoryz ardından özelliklerile oynuyoruzç
+- not operator ==false gbi çalışır.
