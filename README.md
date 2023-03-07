@@ -263,8 +263,38 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - New Concepts and Skills:
 - Physics Materials
 - Defining vectors in 3D space
-- Normalizing values
+- Normalizing values !!
 - Methods with return values
 **Çıkardıkalrım**
 - eğer bir değer dömdürceksek void değil döndürülen tipte metod yaz retuen yaz. ve fnsiyonu çağır.
-- 
+
+- 4.3 
+
+- When the player collects a powerup, a visual indicator appears
+- When the player collides with an enemy while they have the powerup, the enemy goes flying
+- After a certain amount of time, the powerup ability and indicator disappear
+- New Concepts and Skills:
+- Debug concatenation
+- Local component variables 
+- IEnumerators and WaitForSeconds()
+- Coroutines
+- SetActive(true/false) 
+**Çıkardıkalrım**
+- eğer power up yapcaksan ıenumaratorla power up çöelliğinin gitmesini kopntrol edebilrisin.
+
+- 4.4
+-  Enemies spawn in waves
+- The number of enemies spawned increases after every wave is defeated
+- A new power up spawns with every wave
+- New Concepts and Skills:
+- For-loops
+- Increment (++) operator
+- Custom methods with parameters
+- FindObjectsOfType
+ **Çıkardıkalrım**
+- wave oluştrmak için for loop kullanabilrisin
+- parametreli metohdlar
+
+
+
+
