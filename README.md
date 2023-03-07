@@ -245,3 +245,26 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - Ears-> listerner, speakers -> audiosource davranışı yapar
 - audio soruce çağıırrp playoneshot gibi fonksiyonkar kullanılabilir.
 - ana müzik direkt main kameraya eklenebilir.
+
+
+- 4.1
+- Camera rotates around the island based on horizontal input
+- Player rolls in direction of camera based on vertical input
+- New Concepts and Skills:
+- Texture Wraps
+- Camera as child object
+- Global vs Local coordinates
+- Get direction of other object
+
+- 4.2 
+- Enemy spawns at random location on the island
+- Enemy follows the player around 
+- Spheres bounce off of each other 
+- New Concepts and Skills:
+- Physics Materials
+- Defining vectors in 3D space
+- Normalizing values
+- Methods with return values
+**Çıkardıkalrım**
+- eğer bir değer dömdürceksek void değil döndürülen tipte metod yaz retuen yaz. ve fnsiyonu çağır.
+- 
