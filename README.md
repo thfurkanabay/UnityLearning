@@ -296,5 +296,53 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - parametreli metohdlar
 
 
+- 5.1
+- Random objects are tossed into the air on intervals
+- Objects are given random speed, position, and torque
+- If you click on an object, it is destroyed
+- New Concepts and Skills: 
+- 2D View
+- AddTorque 
+- Game Manager
+- Lists
+- While Loops
+- Mouse Events
 
+- 5.2 
+- There is a UI element for score on the screen
+- The player’s score is tracked and displayed by the score text when hit a target
+- There are particle explosions when the player gets an object
+- New Concepts and Skills:
+- TextMeshPro 
+- Canvas
+- Anchor Points
+- Import Libraries
+- Custom methods with parameters
+- Calling methods from other scripts
 
+ **Çıkardıkalrım**
+- bir koda tek bir değer verip prefablerde farklılaştırlabilir.
+- Custom methods with parameters- işimize score güncellerken falan diğer yerlerde kullanabilirz değeri döndüen fonsiyon olarrak kullanarka.
+
+- 5.3 
+- 
+ **Çıkardıkalrım**
+- start corputine bilgi gerekiyorsa bu bilgiyi fonsksiyondan önce bilmeliyiz.
+- A functional Game Over screen with a Restart button
+- When the Restart button is clicked, the game resets
+- New Concepts and Skills: 
+- Game states 
+- Buttons
+- On Click events
+- Scene management Library
+- UI Library
+- Booleans to control game states
+
+- 5.4
+- Title screen that lets the user start the game
+- Difficulty selection that affects spawn rate
+- New Concepts and Skills:
+- AddListener() 
+- Passing parameters between scripts
+- Divide/Assign (/=) operator
+- Grouping child objects
