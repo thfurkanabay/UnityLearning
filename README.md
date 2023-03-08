@@ -346,3 +346,27 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - Passing parameters between scripts
 - Divide/Assign (/=) operator
 - Grouping child objects
+
+**The user testing process typically follows this high level structure:**
+- Define the objectives.
+- Plan the session. 
+- Facilitate the session.
+- Evaluate the results
+
+
+- Optimization
+- Serialized Fields
+- readonly / const / static / protected 
+- Event Functions
+- FixedUpdate() vs. Update() vs. LateUpdate()
+- Awake() vs. Start()
+- Object Pooling
+
+- Searching on Unity Answers, Forum, Scripting API
+- Troubleshooting to resolve bugs
+- AddRelativeForce, Center of Mass, RoundToInt
+- Modulus/Remainder (%) operator
+- Looping through lists
+- Custom methods with bool retu
+
+
