@@ -375,4 +375,20 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - public static MainManager Instance;
 - This is the static class member declaration. Note the keyword static after the keyword public. This keyword means that the values stored in this class member will be shared by all the instances of that class. 
 For example, if there were ten instances of MainManager in your scene, they would all share the same value stored in Instance. If any of those 10 MainManagers changed the value in it, it would also be changed for the other nine.
-- 
+- Singleton
+- This pattern is called a singleton. You use it to ensure that only a single instance of the MainManager can ever exist, so it acts as a central point of access.
+- How can data persist between sessions?
+https://connect-prd-cdn.unity.com/20210602/learn/images/197dfde6-d842-4bce-bffa-a0fab3140687_0.jpg.1600x0x1.jpg![image](https://user-images.githubusercontent.com/26336737/224675095-11363c96-4355-42ed-9e1d-3340118ba4f9.png)
+- 2.What is Abstraction?
+- The first pillar of OOP is all about keeping your code clean and simple for the programmer using it, whether that is you or someone else. Abstraction is the process of removing complex code from the scripts where other programmers will see it, and only exposing the functionality other programmers really need. When you “abstract out” the details, you reduce duplicate code and provide easy access to the most useful functions. You’re actually already quite familiar with this pillar, because you’ve benefited from it frequently throughout this pathway. Whenever you call on a method to perform a task rather than writing out all of the code by hand, you’re benefiting from abstraction! 
+```
+private void Start()
+{
+    for (int i = 0; i < 3; i++)
+    {
+        Instantiate(enemyPrefab, GenerateSpawnPosition(),   
+        enemyPrefab.transform.rotation);
+    }
+}
+```
+
