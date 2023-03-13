@@ -391,4 +391,108 @@ private void Start()
     }
 }
 ```
+yerine
+```
+void SpawnEnemyWave() // create new higher-level method 
+{
+    for (int i = 0; i < 3; i++)
+    {
+        Instantiate(enemyPrefab, GenerateSpawnPosition(), 
+        enemyPrefab.transform.rotation);
+    }
+}
 
+private void Start()
+{
+    SpawnEnemyWave(); // call higher-level method in Start()
+}
+```
+
+- Inheritance is the process of creating a primary class (also known as a parent class) from which other classes (called child classes) can be created. A child class takes on, or inherits, all of the features of the parent class automatically. It’s common to have different classes share similar features in an application. For example, a video game may feature many different types of enemy classes, but they are likely to share the same core features, such as managing their own health and the ability to deal damage to the player. With inheritance, the need to write that health and damage functionality for each individual enemy class is eliminated, so that you can focus on writing functionality that’s unique to each class. 
+Flow chart showing the relationship between parent classes and child classes. Enemy class is at the top of the diagram with arrows pointing downward to three child classes: Thief class, Scoundrel class, and Self-identifying ‘bad guy’ class. Both parent and child classes have the shared behaviors of “deal damage” and “reduce health”, but each child class also has a unique behavior not shared by the parent or the other child classes
+https://connect-prd-cdn.unity.com/20210530/learn/images/2d1b6807-43a2-4fa6-9d6b-99ee50c8ff9f_93.png.2000x0x1.png![image](https://user-images.githubusercontent.com/26336737/224711260-be49cd3f-ccdc-48e5-ba57-7149c9a30e33.png)
+
+You’ve already been making use of inheritance with every script you’ve written in Unity so far. By default, whenever you create a new class, it inherits from MonoBehaviour: 
+public class SomeClass : MonoBehaviour { }
+MonoBehaviour is the base class from which all core Unity scripting functionality inherits. Without MonoBehaviour, you wouldn’t be able to call OnTriggerEnter, GetComponent, or even use Start or Update! 
+In the diagram above, it might appear that all of the child enemy classes would lose their ability to access Unity functionality, because they exchanged their inheriting class from MonoBehaviour to Enemy. Fortunately, since the Enemy class inherits from Monobehaviour, the children of the Enemy class are also considered children of MonoBehaviour!
+
+## 3.What is polymorphism?
+
+- Image of four pillars in a row, labeled from left to right with Abstraction, Encapsulation, Inheritance, and Polymorphism. The third pillar labeled Polymorphism is highlighted.
+Select image to expand
+
+- Although inheriting core functionality from a parent class can be helpful, there are many situations where you don’t want the child class to perform exactly the same action as the parent class. Polymorphism allows you to change the functionality of what an object inherits from its parent class. 
+```
+public class Enemy : MonoBehaviour 
+{ 
+    public void DealDamage () 
+    {
+        Player.Health -= 10;
+    }
+}
+```
+- In the above example, the Enemy class has a DealDamage method that removes 10 points from the Player’s health whenever it’s called. The Thief class, a child of Enemy, can call this method without declaring it in the class. 
+```
+public class Thief : Enemy
+{
+    private void Update()
+    {
+        if (Player.isSeen)
+        {
+            DealDamage(); // method from parent class can be called
+        }
+    }
+}
+```
+- This is fine if you want the Thief to deal exactly the same amount of damage as the Enemy class, but what if you wanted it to be a different value? These changes are accomplished through the process known as method overriding. 
+The method that you want to override in the parent class must first be marked for overriding. This is done by making it a virtual method: 
+```
+public class Enemy : MonoBehaviour { 
+
+    public virtual void DealDamage () { // virtual keyword allows overriding
+
+        Player.Health -= 10;
+    }
+}
+```
+- Identifying a method as virtual indicates that it can, but doesn’t have to, be overridden. This is ideal for the current example, because while the Thief child class may need to modify the DealDamage method, another child class, such as the Scoundrel class, may not.
+Once DealDamage is set to virtual, the Thief class can override it by creating its own  method for DealDamage. Here, instead of virtual, we’ll use the override notation. You can now add new functionality into the method specifically for the Thief class: 
+```
+public class Thief : Enemy
+{
+    public override void DealDamage() // can override virtual methods from parent class
+    {
+        Player.Health -= 2;
+        CommitPettyTheft();
+    }
+    private void Update()
+    {
+        if (Player.isSeen)
+        {
+            DealDamage();
+        }
+    }
+}
+```
+- The Thief class now deals a smaller amount of damage than the parent Enemy class, and also calls one of the Thief-specific methods. Now, when DealDamage is called in Update by a Thief object, the customized DealDamage method will be called instead of the parent method. 
+
+- .What is encapsulation?
+ Image of four pillars in a row, labeled from left to right with Abstraction, Encapsulation, Inheritance, and Polymorphism. The fourth pillar labeled Encapsulation is highlighted.
+
+A major theme of encapsulation is safety in code — in other words, the process of ensuring that code is only used as it is intended to be used, and the values and data you are manipulating can’t be corrupted. In encapsulated code, other programmers can’t easily change the values of variables or the properties of objects. It’s impossible to account for all of the different ways that other scripts might access your code, so it's far better to encapsulate what you’ve created so it can only perform as intended. 
+## 2.Overview
+- In the previous tutorials, you learned about the four pillars of object-oriented programming and how they are applied: 
+Abstraction: reducing duplicate code by “abstracting out” repeated details or information.
+Encapsulation: “encapsulating” data and the methods that manipulate that data together in a class, protecting it from misuse by other classes.
+Inheritance: child classes deriving (or “inheriting”) behavior from parent classes.
+Polymorphism: changing (“morphing”) methods into many (“poly”) forms (i.e., method overloading and method overriding).
+In this submission challenge, you will create a new project from scratch, demonstrating each of these pillars in the code. 
+Carefully plan your program’s architecture at a high level before you begin coding. Along the way, you’ll have an opportunity to practice branching and merging code using version control software.
+This challenge is not going to be easy, but you’ll be a more thoughtful, strategic programmer by the time you complete it!
+A successful submission will include:
+A link to your project’s GitHub repo, showing multiple commits with commit messages and at least two branches
+Demonstration of abstraction (higher-level methods that abstract unnecessary details)
+Demonstration of inheritance (parent/child classes)
+Demonstration of polymorphism (method overriding or overloading)
+Demonstration of encapsulation (getters and setters)
