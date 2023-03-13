@@ -370,3 +370,9 @@ Kamerayi playera sabitle, offset ver oyun nereden takip edilcekse onu gameobjet 
 - Custom methods with bool retu
 
 
+- Data persistence
+- DontDestroyOnLoad()
+- public static MainManager Instance;
+- This is the static class member declaration. Note the keyword static after the keyword public. This keyword means that the values stored in this class member will be shared by all the instances of that class. 
+For example, if there were ten instances of MainManager in your scene, they would all share the same value stored in Instance. If any of those 10 MainManagers changed the value in it, it would also be changed for the other nine.
+- 
