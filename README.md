@@ -505,3 +505,21 @@ Demonstration of encapsulation (getters and setters),
 
 https://user-images.githubusercontent.com/26336737/233952865-3b092039-8e37-4804-9be5-150c033a43f7.mp4
 
+- Meshes made by modeling applications, such as Autodesk® 3ds Max® and Maya®, or Blender®, generate their own sets of 2D coordinates called UV coordinates. UV coordinates are like the XY coordinates in regular 2D spaces, but they are called UV to differentiate them from the coordinate system of the environment (XYZ). UV coordinates are relative to the mesh, not the 3D space in your scene.
+- UV mapping is the process of unwrapping the surface of a 3D model to create a flat surface, then applying a 2D texture map to it. In the process, the modeling application generates the UV coordinates that allow the texture to be wrapped back onto the model.
+- Since Ellen’s body material uses the Metallic workflow, this map is grayscale. Although the metallic data is in the R, G, and B channels of the texture file, the shader only reads the R channel. 
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
