@@ -495,4 +495,13 @@ A link to your project’s GitHub repo, showing multiple commits with commit mes
 Demonstration of abstraction (higher-level methods that abstract unnecessary details)
 Demonstration of inheritance (parent/child classes)
 Demonstration of polymorphism (method overriding or overloading)
-Demonstration of encapsulation (getters and setters)
+Demonstration of encapsulation (getters and setters),
+
+## Shaders and Materials
+- daha öncekiler silindi göz gezdirip önemlileri not alabşlirsin
+- Textures are regular image files in formats you might be familiar with, such as BMP, TIF, PNG, and JPG. 
+- The data in image files is organized into channels. Black and white images, also known as grayscale images, have just one channel to indicate the shade of gray in each pixel. Color images require three channels, red, green, and blue (RGB), which combine to create the colors you see on your computer display.  
+- Some image file formats have four channels: red, green, blue, and alpha (RGBA). The alpha channel typically contains transparency data.
+
+https://user-images.githubusercontent.com/26336737/233952865-3b092039-8e37-4804-9be5-150c033a43f7.mp4
+
