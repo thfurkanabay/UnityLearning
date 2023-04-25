@@ -532,10 +532,21 @@ Height maps are not used as commonly as normal maps. They are useful for creatin
 - Observe the emission map for Ellen, on display in the Textures Exhibit of our gallery.It is mostly black, but look closely and you will see three green dots. The dots in this map line up with the lights on the back of Ellen’s neck and the top of her robot arm.
 - The color on the map affects the color of the light. In addition, The HDR color picker gives the non-black areas of the emissive map glowing colored light. 
 - HDR stands for high dynamic range. HDR colors have an additional luminosity outside the regular range of display colors. These are useful for glowing objects and intense specular reflections. The HDR color picker has an intensity slider to control how much additional luminosity is added to the color.
+- https://learn.unity.com/project/make-a-flag-move-with-shadergraph --> Shader Graph
+
+## Shader Graph
+
+![e490d65c-a67a-4aa9-a155-9f534e5bf047_CC_Shad_SG_2_2 jpg 1200x0x1](https://user-images.githubusercontent.com/26336737/234270639-316a5911-5638-42eb-9547-5436aea13862.jpg)
+
+- he Shader Graph toolbar (1) is where you will save your shader asset.
+- The Blackboard (2) contains the properties that will be available to artists who use this shader to create materials. Here you can define property types as well as their names, attributes, and default values.
+- Your workspace (3) is where you will create the node graph of your shader. 
+- The Main Preview window (4) will give you a real-time update of what your shader looks like and how it behaves.
+- The Graph Inspector window (5) will show you the current settings, properties, and values of any node you have selected.
+- The Master Stack (6) is the end point of a Shader Graph that defines the final surface appearance of a shader. It lists the major shader properties of a Vertex and a - Fragment shader and provides you with the end nodes where you will plug in the necessary values.
+- https://docs.unity3d.com/Packages/com.unity.shadergraph@10.7/manual/Shader-Graph-Window.html
+- The basic shimmer is made with a procedural noise map. Procedural means that the texture is created by some formula or algorithm, not from an image or other physical source. Shader Graph provides a few procedural noise maps to choose from. Each one generates a cloud-like map with lighter and darker areas in a seemingly random pattern.
 - 
-
-
-
 
 
 
