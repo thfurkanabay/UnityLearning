@@ -508,7 +508,32 @@ https://user-images.githubusercontent.com/26336737/233952865-3b092039-8e37-4804-
 - Meshes made by modeling applications, such as Autodesk® 3ds Max® and Maya®, or Blender®, generate their own sets of 2D coordinates called UV coordinates. UV coordinates are like the XY coordinates in regular 2D spaces, but they are called UV to differentiate them from the coordinate system of the environment (XYZ). UV coordinates are relative to the mesh, not the 3D space in your scene.
 - UV mapping is the process of unwrapping the surface of a 3D model to create a flat surface, then applying a 2D texture map to it. In the process, the modeling application generates the UV coordinates that allow the texture to be wrapped back onto the model.
 - Since Ellen’s body material uses the Metallic workflow, this map is grayscale. Although the metallic data is in the R, G, and B channels of the texture file, the shader only reads the R channel. 
+- Transparency is controlled with the alpha channel of the base map (The A in RGBA). Low values make the base map color less visible and high values make it more visible. You can make a mesh entirely invisible by setting the alpha channel values to zero, or you can create translucent effects by setting the alpha values in the mid-range. 
+- In the real world, translucent substances refract light, which means they change its direction. Refraction is an advanced shader effect that we won’t attempt here; however, we can create a translucent glass object that looks pretty convincing.  
+- 5.  In the Inspector, on the Glass Jar material, locate Surface Options (at the top of the Material section) and the Surface Type property. Change this value from Opaque to Transparent. 
+- The front half of the jar disappears! It looks like a cutout. This is happening because of the Render Face setting. Render Face is usually set to Front because the shader only needs to render the surface of the mesh facing the viewer. However, with transparent objects, the shader needs to render both the front and back. 
+- 6.  Set Render Face to Both.
+- The jar still looks strange because we are giving it conflicting instructions: Surface Type is Transparent but the alpha channel still has the default values, which indicate no transparency. 
+- Instead of modeling meshes of items like these, artists use alpha clipping in their textures to make part of a simple mesh invisible. Alpha clipping is a much more efficient way to create detailed objects — it’s easier to create and easier for the computer to process at runtime.
+- 4.  Examine the plant from all angles. The leaves are visible from the top, but not from the bottom! This happens because these meshes are single-sided: there is no separate mesh on the back of the object (as there is with a cube, for example). 
+- Now the leaves look like printouts of leaves on paper! You can fix that with alpha clipping.
+- You have used transparent effects in two ways: by making the entire jar object transparent with the Transparent surface type, and by making the leaves on the plant partially transparent using alpha clipping. Well done!
+- https://docs.unity3d.com/Manual/StandardShaderMaterialParameterNormalMap.html
+- http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-13-normal-mapping/
+- Normal Maps and Height Maps are both types of Bump Map. They both contain data for representing apparent detail on the surface of simpler polygonal meshes, but they each store that data in a different way.
+- As you will recall, normals are values in the mesh data that define the direction each vertex is facing. A normal map sets these values over an entire surface, which directs the shader to create the illusion that fragments (pixels) on the surface are facing different directions.
+- Height maps indicate the relative height of each pixel from the mesh. These are single-channel (grayscale) maps in which each pixel value indicates a relative distance from the mesh surface. When you use an RGB image as a height map, the shader only reads the green channel.
+- Select image to expand
+Height maps are not used as commonly as normal maps. They are useful for creating a dramatic effect, but they also stretch the base map, which is not usually desirable if the base map is not a solid color. 
+- cclusion, in 3D graphics, is the blockage of light by an object. A crack in a sidewalk and the thin dark shadow line between the fingers of a closed fist are examples of occlusion.
+- Even in PBR, ambient light can reflect in odd ways where it should be occluded. An occlusion map adds shadows to these occluded areas.
+- Look very closely at a real-world object that has a smooth surface, such as the glass on your smartphone, covered with fingerprints, or your favorite coffee cup that has become scratched and worn. If you wanted to model these items and include details like the fingerprints or scratches, you can use ** microsurface mapping ** to add a level of detail that isn’t otherwise captured in your base map or normal map.
+- Emissive materials appear to give off their own light. You can use an emission map to specify areas where your surface will glow. 
+- Observe the emission map for Ellen, on display in the Textures Exhibit of our gallery.It is mostly black, but look closely and you will see three green dots. The dots in this map line up with the lights on the back of Ellen’s neck and the top of her robot arm.
+- The color on the map affects the color of the light. In addition, The HDR color picker gives the non-black areas of the emissive map glowing colored light. 
+- HDR stands for high dynamic range. HDR colors have an additional luminosity outside the regular range of display colors. These are useful for glowing objects and intense specular reflections. The HDR color picker has an intensity slider to control how much additional luminosity is added to the color.
 - 
+
 
 
 
