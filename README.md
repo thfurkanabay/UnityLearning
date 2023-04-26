@@ -587,9 +587,36 @@ You might like to start with the following free resources:
 - Gamma, the default in the 3D Template
 - Linear, the default in the URP Template
 - https://docs.unity3d.com/Manual/LinearLighting.html
+
+
+- In the Inspector, find the Post-Processing Volume. You should see that there are four effects currently being used in the scene:
+- Bloom
+- Tonemapping
+- Vignette
+- Chromatic Aberration
+
+- Before you continue, take some time to play with the different things you have been working with to see how you can develop the atmosphere of the scene:
+- Directional Light
+- Skybox
+- Additional lit props
+- Ambient lighting
+- Shadows
+
+- Real-time lighting
+
+- Unity calculates real-time lighting at runtime (when your game or other real-time experience is running). The Directional Light and other light sources that you created in the previous tutorials are all currently real-time lights.
+- These lights are calculated once per frame, which means that they can be very responsive to moving characters and other elements in your scene. However, when scenes get more complex these lights can require a lot of memory, which can result in reduced performance — particularly for players or users with lower specification hardware.
+- Baked lighting
+
+- Unity pre-calculates baked lighting in advance of runtime (before users interact with your experience). This means that all Unity needs to do at runtime is apply the lighting data to the scene. You can’t change the properties of lights that have been baked at runtime and they won’t respond to dynamic GameObjects (such as a character walking through your scene).
+- The process of calculating the lighting involves generating UV coordinates for the entire scene, just like the UV coordinates used to map a texture in a material. This texture map is called a lightmap, and the process of creating it is called lightmapping or baking. 
+- Baked lighting can be a lot more efficient but it can also be used to implement lighting that’s a lot more realistic and engaging for users. 
+
+- If a GameObject does not move at runtime, it’s considered static.  You can flag these GameObjects as static by using the Static property. Unity will then be able to precalculate data about it before runtime, including the data stored in a lightmap for global illumination.
+
+- https://docs.unity3d.com/Manual/LightingGiUvs-GeneratingLightmappingUVs.html
+- You can set the Light Mode to Mixed to create Mixed Lights. These combine dynamic (real-time) shadows with baked lighting from the same light source. This requires more processing when users explore your experience, but it can improve the quality of your shadows. For a relatively small and lightweight project like this, it is often worth the performance cost.
 - 
-
-
 
 
 
