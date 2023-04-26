@@ -546,12 +546,48 @@ Height maps are not used as commonly as normal maps. They are useful for creatin
 - The Master Stack (6) is the end point of a Shader Graph that defines the final surface appearance of a shader. It lists the major shader properties of a Vertex and a - Fragment shader and provides you with the end nodes where you will plug in the necessary values.
 - https://docs.unity3d.com/Packages/com.unity.shadergraph@10.7/manual/Shader-Graph-Window.html
 - The basic shimmer is made with a procedural noise map. Procedural means that the texture is created by some formula or algorithm, not from an image or other physical source. Shader Graph provides a few procedural noise maps to choose from. Each one generates a cloud-like map with lighter and darker areas in a seemingly random pattern.
+
+## Lighting
+
+- The properties of light
+
+- All light needs a source — something that emits it, like the sun or a light bulb. Light is energy that travels from that source in straight lines in the form of waves. 
+- Its shape will determine the direction in which the light waves are emitted.
+- Its size will determine the area that the light impacts.
+- Its strength (or intensity) will determine how far those light waves can travel and how bright it is.
+- For someone or something to perceive light, two things are required:
+- A light source, which emits light, like a light bulb or the sun.
+- A light sensor to receive it, like the retina in your eye or the image sensor in a digital camera.
+- Reflection: When a light wave impacts a surface and is redirected, as you learned in the previous step.
+- Refraction: When a light wave passes through something other than air (like water or glass) and its path is changed by that.
+- Baked Global Illumination system
+
+- The Baked Global Illumination system includes:
+- Lightmapping: The process of pre-calculating the brightness of surfaces in a scene and storing the result in a texture called a lightmap. This global illumination system uses a specific lightmapper system called the Progressive Lightmapper to complete this process.
+- Light Probes: A tool to measure (or probe) data about the light that passes through the empty spaces in your scene.
+- Reflection Probes: A tool to simulate more realistic reflections in Unity.
+
+- Point Lights: These lights send out light in all directions equally from a point in space. You can use them to simulate light sources like lamps.
+- Spot Lights: These lights send out light in a cone-shape from a point in space. You can use them to simulate light sources like flashlights. 
+
+- The Indirect Multiplier property impacts the intensity of the indirect light provided by this light source (light that bounces multiple times before being received by a sensor). If you set it:
+- Below 1, the indirect light will be dimmer each time it bounces off an object. This is the way real light behaves, but you might want to override that behavior to achieve a particular lighting effect.
+- Above 1, the indirect light will become brighter with each bounce. This is not natural, but it can be very useful if you’re trying to illuminate a dark, enclosed space in your scene.
+
+- Color resources for lighting
+
+- Exploring color more deeply is beyond the scope of this learning experience, but you may find independent research very helpful as you work on lighting real-time experiences.
+You might like to start with the following free resources:
+- Khan Academy’s Pixar in a Box course unit on color science: A foundational primer that will take you deeper into the science of color than this learning experience.
+- Draw Paint Academy’s Color theory guide for artists: An artist-perspective guided tour through color theory, and a useful refresher for those with a background in visual art.
+- Massachusetts College of Art and Design’s Color theory research guide: A starting point to help you begin your own research journey into the aspects of color theory that interest you most.
+- Bill Williams’s Stage Lighting Design on General Design Methods: Although written with a focus on theater lighting design, the basic concepts are still relevant for lighting for 3D digital spaces.
+
+- There are two different kinds of color space:
+- Gamma, the default in the 3D Template
+- Linear, the default in the URP Template
+- https://docs.unity3d.com/Manual/LinearLighting.html
 - 
-
-
-
-
-
 
 
 
